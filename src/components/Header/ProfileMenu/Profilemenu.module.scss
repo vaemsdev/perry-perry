@@ -1,0 +1,19 @@
+.dropdown-item {
+    display: flex !important;
+    border: none;
+}
+
+.icon {
+    width: 20px;
+    text-align: center;
+    margin-right: .5rem;
+}
+
+.DropdownToggle {
+    border: none !important;
+
+    &::after {
+        display: none !important;
+    }
+
+}

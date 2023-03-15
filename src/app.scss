@@ -1,0 +1,41 @@
+@import "./assets/scss/colors";
+@import './components/_variables.scss';
+
+@font-face {
+    font-family: 'Museo';
+    src: "./assets/fonts/museo_sans_ssv/Museo Sans 100.otf";
+}
+
+* {
+    user-select: none;
+}
+
+$theme-colors: (
+    "info": tomato,
+    "danger": teal,
+    "primary": $primary,
+    "app": #D31B27
+);
+
+$body-bg: #d2d7df;
+$body-color: #111;
+$success: #2b9348;
+
+$font-size-base: .85rem !default;
+$font-size-sm: $font-size-base * .875 !default;
+$font-size-lg: $font-size-base * 0 !default;
+
+$dropdown-item-padding-x: .75rem;
+
+$border-color-translucent: #e5e5e5;
+
+$border-radius-lg: .375rem;
+$modal-content-border-color: none;
+
+$toast-header-background-color: $success;
+$toast-header-color: #fff;
+$toast-background-color: #fff;
+$toast-border-width: 0;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./common.scss";

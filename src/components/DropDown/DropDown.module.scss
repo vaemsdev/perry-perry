@@ -1,0 +1,22 @@
+.Dropdown {
+
+    button {
+        border: none !important;
+        outline: none !important;
+    }
+
+    .location-icon {
+        margin: 0 .5rem;
+    }
+
+    .dropdown-item {
+        display: flex;
+        border: none;
+
+        .icon {
+            width: 20px;
+            text-align: center;
+            margin-right: .5rem;
+        }
+    }
+}

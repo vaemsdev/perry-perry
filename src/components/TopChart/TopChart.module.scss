@@ -1,0 +1,89 @@
+@import '../_variables';
+
+.TopChart {
+    width: 100%;
+    padding-bottom: $body-padding;
+    position: relative;
+    z-index: 250;
+    // background-color: #d2d7df;
+    // padding: calc(85px + $body-padding) $body-padding-x $body-padding $body-padding-x;
+    // height: 100vh;
+
+    .top-char-heading {
+
+        padding: 0 calc(10% + 0.5rem);
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        padding: 0 10%;
+        justify-content: center;
+
+        h1 {
+            color: red;
+        }
+    }
+
+    .TopChartCard {
+        width: 25%;
+        padding: .5rem;
+        height: auto;
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .body {
+            width: 100%;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            text-transform: initial;
+
+            .title {
+                font-weight: bold;
+                padding: .2rem 1rem;
+                font-size: 1rem;
+                background-color: rgba(0, 0, 0, .65);
+            }
+
+            .description {
+                padding: .375rem 1rem;
+                background-color: rgba(0, 0, 0, .45);
+                font-size: .7rem;
+            }
+        }
+
+
+
+        .TopChartCardContainer {
+            position: relative;
+            box-shadow: 0 1px 10px 1px #0003;
+            border-radius: .375rem;
+            overflow: hidden;
+            background-color: #f8f9fa;
+            padding: 0;
+            height: 200px;
+
+            .image {
+                width: 100%;
+                height: 200px;
+                background-size: cover;
+                background-clip: border-box;
+                background-repeat: no-repeat;
+                filter: sepia(20%);
+                transition: .5s;
+
+                &:hover {
+                    filter: sepia(0%);
+                }
+            }
+        }
+    }
+}

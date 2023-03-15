@@ -1,0 +1,29 @@
+@import '../_variables';
+
+.app-body {
+    background-color: #fff;
+    // width: 1280px;
+    margin: auto;
+    padding: calc($header-height + $body-padding) 0;
+}
+
+.position-fix {
+    position: fixed !important;
+}
+
+.toast-container {
+
+    div[class*='position-'] {
+        position: fixed !important;
+
+        .toast {
+            border-radius: .375rem !important;
+            overflow: hidden !important;
+        }
+    }
+}
+
+.body-bg {
+    position: fixed;
+    height: 100vh;
+}
